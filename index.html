@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohanapriya Protfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f968245332.js" crossorigin="anonymous"></script></head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/Logo1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Mohanapriya</span> <br> Srinivasaraj from India</h1>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------- About ------------------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Mohanapriya.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Innovative individual with proven success evaluating requirements for software development projects to design innovative solutions. Out-of-the-box thinker and problem solver dedicated to improving performance. Works well in teams and consistently delivers to deadlines.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming languages</span><br>Python, C, C++</li>
+                        <li><span>Database</span><br>SQL Server, MySQL, Snowflake, Teradata</li>
+                        <li><span>Web and Mobile</span><br>HTML, CSS, Javascript, JSON, XML</li>
+                        <li><span>Visualization tool</span><br>Tableau, Power BI</li>
+                        <li><span>API, RestAPI</span></li>
+                        <li><span>Object Oriented Programming</span></li>
+                        <li><span>GIT, GitHub</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021-current</span><br><h3>Decision Minds India Private Limited</h3></li>
+                        <li>Trained in Snowflake<br></li>
+                        <li>Bulit and developed a Tableau-PowerBI migration tool using python</li>
+                        <li>Spearheaded in Data Science project to Apple client</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2016-2020</span><br>BE in Computer Science Engineering from <br> Madras Institute of Technology</li>
+                        <li><span>2016</span><br>Higher Secondary School in Computer Science from <br> Vidya Vikas Girls Higher Secondary School </li>
+                        <li><span>2014</span><br>SSLC <br> from Shri Vidya Giri Matric Higer Secondary  School </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------Portfolio------------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/0.jpg" alt="">
+                <a href="https://github.com/mohanapriya24/SQL-Data-Exploration">
+                <div class="layer">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h3>SQL Data Exploration</h3>
+                    <i class="fa-solid fa-link"></i>
+                </div>
+                <p class="details">A projects which shows different methods to explore data using SQL. Click here to view project.</p>
+                </a>
+            </div>
+            <div class="work">
+                <img src="images/0.jpg" alt="">
+                <a href="https://github.com/mohanapriya24/SQL-Data-Cleaning">
+                <div class="layer">
+                    <i class="fa-solid fa-broom"></i>
+                    <h3>SQL Data Cleaning</h3>
+                    <i class="fa-solid fa-link"></i>
+                </div>
+                <p class="details">A project that uses SQL queries to perform data cleaning.  Click here to view project.</p>
+                </a>
+            </div>
+            <div class="work">
+                <img src="images/0.jpg" alt="">
+                <a href="https://github.com/mohanapriya24/Download-from-Github">
+                <div class="layer">
+                    <i class="fa-solid fa-file-arrow-down"></i>
+                    <h3>Download from Github</h3>
+                    <i class="fa-solid fa-link"></i>
+                </div>
+                <p class="details">A python script to download a specific file or folder from github. Click here to view project.</p>
+                </a>
+            </div>
+            <div class="work">
+                <img src="images/0.jpg" alt="">
+                <a href="https://github.com/mohanapriya24/Python-to-Snowflake">
+                <div class="layer">
+                    <i class="fa-regular fa-snowflake"></i>
+                    <h3>Python to Snowflake</h3>
+                    <i class="fa-solid fa-link"></i>
+                </div>
+                <p class="details">A python script to create connection between python and snowflake using json. Click here to view project.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------Contact--------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i>Mail: mohanapriyas2498@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> Call: (+91)7338949564</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/Mohanapriya-Srinivasaraj"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/mohanapriya24"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Resume.pdf" download class="btn btn-2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Enter your name" required>
+                    <input type="email" name="Email" placeholder="Enter your Email ID" required>
+                    <textarea name="Message" rows="6" placeholder="Any comments you like to share with me"></textarea>
+                    <button type="submit" class="btn btn-2" >Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Website created with the help of GreatStack youtube channel
+         Photo by <a href="https://www.pexels.com/photo/gray-leaf-on-black-background-1291515/">Alan Cabello</a>
+        </p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+    var sidemenu = document.getElementById("sidemenu")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+
+    }
+
+    function openmenu(){
+        sidemenu.style.right = '0';
+
+    }
+    function closemenu(){
+        sidemenu.style.right = '-200px';
+        
+    }
+</script>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzMVL7kXDCtdq_keddhMjTSSTGRdgfC1I6_8gd27COqseJorcekDR7dnFfM5KxdmzhS/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Message sent successfully:)"
+            setTimeout(function() {
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
